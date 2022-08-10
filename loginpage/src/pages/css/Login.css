@@ -1,0 +1,94 @@
+.full{
+    display: flex;
+}
+img
+{
+    height:100vh;
+    width:60em;
+    object-fit: cover;
+}
+.Form-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0em;
+    padding-left: 5em;
+    margin-right: 4em ;
+    border-left: solid;
+    border-width: 1em;
+    border-color: rgb(227, 220, 231);
+}
+.Form-Container input
+{
+    height: 100px;
+    width: 300px;
+    margin: 1em;
+    margin-left: -1em;
+    border:none;
+    border-bottom-style:solid ;
+    border-bottom-color: rgb(173, 88, 239);
+    border-bottom-width: 3px;
+}
+
+.Form-Container input[type="text"]
+{
+    font-size:24px;
+}
+
+.Form-Container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(173, 88, 239);
+    opacity: 1; /* Firefox */
+    font-size: 1em;
+    padding-bottom: 9em;
+  }
+
+.Form-Container h1{
+    margin-left: -2.7em ;
+    font-weight: 400;
+    color: rgb(173, 88, 239);
+}
+
+.Form-Container button{
+    
+    padding: 1em 3em;
+    margin-top: 1em;
+    margin-left: -2.4em;
+    border-radius: 50px;
+    background-color: rgb(173, 88, 239);
+    color: aliceblue;
+    font-size: 25px;
+    border: none;
+
+}
+.Form-Container nav{
+
+    margin-top : 2.5em;
+    margin-left: -2.5em;
+    font-size: 20px;
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(173, 88, 239);
+    border-bottom-width: 2px;
+
+
+}
+.Form-Container a{
+    text-decoration: none;
+    color: rgb(177, 99, 205);
+}
+
+#forgot{
+    margin-left: -4.2em;
+}
+
+#forgotemail
+{
+    margin-left: 4em;
+    color: rgb(115, 115, 115);
+    font-size: 15px;
+}
+#formforgot{
+    padding-left: 0em;
+}
+
+

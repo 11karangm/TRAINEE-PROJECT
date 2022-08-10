@@ -1,0 +1,35 @@
+.complete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(175, 92, 239);
+}
+
+.complete h2{
+    font-size: 4em;
+    color: aliceblue;
+}
+
+.complete nav{
+
+    margin-top : 2.5em;
+    margin-left: -2.5em;
+    font-size: 20px;
+    
+    
+    
+    margin-left:0.3em;
+
+
+}
+.complete a{
+    text-decoration: none;
+    color: rgb(177, 99, 205);
+    background-color: aliceblue;
+    font-size: 30px;
+    padding: 1em 3em;
+    border-radius:50px ;
+    
+}
