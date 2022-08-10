@@ -1,0 +1,8 @@
+.LandingPage{
+    display: flex;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}

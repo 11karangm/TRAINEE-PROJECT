@@ -91,4 +91,21 @@ img
     padding-left: 0em;
 }
 
+#Logbutton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(173, 88, 239);
+    font-size: 30px;
+    padding: 1em 3em;
+    border-radius:50px ;
+    
+}
+
+#Lognav
+{
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(173, 88, 239);
+    border-bottom-width: 0px;
+}
+
 

@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import pic from "./images/login_page.jpg"
 import "./css/Login.css"
+import Landing from "./Landing";
 
 function Login() {
     return(
@@ -13,7 +14,9 @@ function Login() {
                 <h1>Login your account</h1>
                 <input type="text" placeholder="Username"/>
                 <input type="text" placeholder="Password"/>
-                <button>Login</button>
+                <nav id="Lognav">
+                <Link to="/landing" id="Logbutton">Login</Link>
+                </nav>
                 <nav>
                 <Link to="/password-reset">Forgot Password?</Link>
                 </nav>
