@@ -1,7 +1,8 @@
 import React from "react";
 import Menu from "./Menu";
+import UserForm from "./UserForm";
 
-function Messages(){
+function AddNew(){
 
     return(
 
@@ -13,7 +14,7 @@ function Messages(){
              
             </div>
             
-            <h2>Messages</h2>
+            <UserForm />
 
             </div>
             
@@ -23,4 +24,4 @@ function Messages(){
 
 }
 
-export default Messages;
+export default AddNew;

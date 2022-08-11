@@ -1,14 +1,15 @@
-.LandingPage{
+.Landing{
     display: flex;
+    
 
 }
 .menu{
     display: flex;
     flex-direction: column;
-    background-color: rgb(60, 60, 197);
-    height: 55vh;
+    background-color: #463bfa;
+    height: 62vh;
     width: 20vw;
-    padding: 12em 0em;
+    padding: 7em 0em;
     
 }
 .btn
@@ -16,9 +17,9 @@
     padding:1em 2em;
     font-size: 20px;
     font-weight: 0px;
-    background-color: rgb(60, 60, 197) ;
+    background-color: #463bfa ;
     border: none;
-    color: rgb(158, 202, 240);
+    
 }
 svg{
     margin-bottom: -0.1em;
@@ -34,3 +35,47 @@ svg{
 #icon-c{
     margin-left: -1.3em;
 }
+.btn a{
+    text-decoration: none;
+    color: rgb(158, 202, 240);
+}
+.YourLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e22ff;
+    padding: 0.9em 0em;
+
+
+}
+
+.YourLogo p{
+font-size: 20px;
+color: white;
+    
+}
+
+.YourLogo svg{
+    
+    
+    color: rgb(255, 255, 255);
+    
+}
+/*================================================================================================================*/
+.topbar{
+    background-color: #668fff;
+    height: 12vh;
+    width: 77vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+}
+.btn2{
+    padding: 0.7em 1em;
+    margin: 0.7em;
+    background-color: #f2f5fa;
+    border: none;
+    color: #668fff;
+}
+

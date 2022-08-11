@@ -1,0 +1,25 @@
+.Form-Container2{
+    height:55vh;
+    width: 120vh;
+    border: none;
+    background-color: rgb(139, 152, 152);
+    display: flex;
+    
+    
+    
+}
+
+.user{
+    margin: 5em 9em ;
+
+}
+label{
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+.Form-Container2 p{
+    margin: 2em;
+}

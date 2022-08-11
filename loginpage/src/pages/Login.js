@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import pic from "./images/login_page.jpg"
 import "./css/Login.css"
-import Landing from "./Landing";
+
 
 function Login() {
     return(
@@ -15,7 +15,7 @@ function Login() {
                 <input type="text" placeholder="Username"/>
                 <input type="text" placeholder="Password"/>
                 <nav id="Lognav">
-                <Link to="/landing" id="Logbutton">Login</Link>
+                <Link to="/landing/Dashboard" id="Logbutton">Login</Link>
                 </nav>
                 <nav>
                 <Link to="/password-reset">Forgot Password?</Link>

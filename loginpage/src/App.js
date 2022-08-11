@@ -4,7 +4,11 @@ import { Routes, Route } from "react-router-dom";
 import Forgot from './pages/Forgot';
 import Login from './pages/Login';
 import Home from './pages/Home';
-import Landing from './pages/Landing';
+import AddNew from './pages/LandingSub/AddNew'
+import Messages from './pages/LandingSub/Messages';
+import Account from './pages/LandingSub/Account';
+import Dashboard from './pages/LandingSub/Dashboard';
+
 
 function App() {
   return (
@@ -13,7 +17,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/password-reset" element={<Forgot />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path= "/landing/AddNew" element={<AddNew />} />
+        <Route path="/landing/Dashboard" element={<Dashboard />} />
+        <Route path="/landing/Messages" element={<Messages />} />
+        <Route path="/landing/Account" element={<Account />} />
+       
         
       </Routes>
     </div>

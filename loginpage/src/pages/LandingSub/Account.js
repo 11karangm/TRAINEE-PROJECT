@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 
-function Messages(){
+function Account(){
 
     return(
 
@@ -13,7 +13,7 @@ function Messages(){
              
             </div>
             
-            <h2>Messages</h2>
+            <h2>Account</h2>
 
             </div>
             
@@ -23,4 +23,4 @@ function Messages(){
 
 }
 
-export default Messages;
+export default Account;
