@@ -5,4 +5,32 @@
 .menu{
     display: flex;
     flex-direction: column;
+    background-color: rgb(60, 60, 197);
+    height: 55vh;
+    width: 20vw;
+    padding: 12em 0em;
+    
+}
+.btn
+{
+    padding:1em 2em;
+    font-size: 20px;
+    font-weight: 0px;
+    background-color: rgb(60, 60, 197) ;
+    border: none;
+    color: rgb(158, 202, 240);
+}
+svg{
+    margin-bottom: -0.1em;
+    padding-right: 1em;
+    color: rgb(158, 202, 240);
+    
+}
+
+#icon-b{
+    margin-left: -0.3em;
+}
+
+#icon-c{
+    margin-left: -1.3em;
 }
