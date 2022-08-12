@@ -29,6 +29,7 @@ img
     border-bottom-style:solid ;
     border-bottom-color: rgb(173, 88, 239);
     border-bottom-width: 3px;
+    background-color: white;
 }
 
 .Form-Container input[type="text"]

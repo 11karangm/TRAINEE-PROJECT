@@ -10,11 +10,11 @@ function AddNew(){
             <Menu />
             <div>
 
-            <div className="topbar">
-             
-            </div>
-            
-            <UserForm />
+                <div className="topbar">
+                
+                </div>
+           
+                <UserForm />
 
             </div>
             

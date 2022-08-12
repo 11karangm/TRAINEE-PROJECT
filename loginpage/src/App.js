@@ -4,9 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Forgot from './pages/Forgot';
 import Login from './pages/Login';
 import Home from './pages/Home';
-import AddNew from './pages/LandingSub/AddNew'
-import Messages from './pages/LandingSub/Messages';
-import Account from './pages/LandingSub/Account';
+import AddNew from './pages/LandingSub/LandingSubComponents/AddNew'
+import Messages from './pages/LandingSub/LandingSubComponents/Messages';
+import Account from './pages/LandingSub/LandingSubComponents/Account';
 import Dashboard from './pages/LandingSub/Dashboard';
 
 

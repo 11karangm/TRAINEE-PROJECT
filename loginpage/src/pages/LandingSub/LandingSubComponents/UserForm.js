@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/AddUser.css"
+import "../../css/AddUser.css"
 
 function UserForm () {
 
@@ -7,7 +7,7 @@ function UserForm () {
         <div className="user">
 
         <h2>
-            ADD USER
+            ADD User
         </h2>
 
         <div className="Form-Container2">
@@ -26,12 +26,12 @@ function UserForm () {
                     <label for="dob">Date of Birth<span>*</span>:</label>
                     <input type="text" id="dob" name="dob"/><br></br>
                     
-                    <label for="startdate">Start Date<span>*</span>:</label>
+                    <label for="startdate">Start Date<span></span>:</label>
                     <input type="text" id="startdate" name="startdate"/><br></br>
 
                     <label for="gender">Gender<span>*</span>:</label>
-                    <select name="contactode" id="contactcode">
-                    <option value=""></option>  
+                    <select name="gender" id="gender" >
+                    <option value="">select</option>  
                     <option value="Male">Male</option> 
                     <option value="Female">Female</option> 
                     </select><br></br>
@@ -49,11 +49,11 @@ function UserForm () {
                 <form action="">
 
                 <label for="address">Address<span>*</span>:</label>
-                <input type="text" id="address" name="address"/><br></br>
+                <input type="text" id="address" name="address" className="add"/><br></br>
 
                 <label for="contact">Contact Number<span>*</span>:</label>
-                <select name="contactode" id="contactcode">
-                    <option value=""></option>  
+                <select name="contactcode" id="contactcode">
+                    <option value="">select</option>  
                     <option value="+91">+91</option>  
                     
                 </select><br></br>
@@ -63,7 +63,7 @@ function UserForm () {
 
                 <label for="status">Status<span>*</span>:</label>
                 <select name="status" id="status">
-                    <option value=""></option>  
+                    <option value="">select</option>  
                     <option value="waiting">waiting</option>  
                     <option value="approved">approved</option>  
                 </select><br></br>
@@ -73,7 +73,7 @@ function UserForm () {
                 <input type="file" id="photo" name="photo"/><br></br>
 
                 <label for="save"></label>
-                <input type="submit" value="Save"/><br></br>
+                <input type="submit" value="Save" id="save"/><br></br>
 
 
                 </form>

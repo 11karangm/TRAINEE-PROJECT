@@ -2,15 +2,18 @@
     height:55vh;
     width: 120vh;
     border: none;
-    background-color: rgb(139, 152, 152);
+    background-color: rgb(255, 255, 255);
     display: flex;
+    padding-top: 3em;
+    padding-right: 5em;
+    padding-bottom: 1em;
     
     
     
 }
 
 .user{
-    margin: 5em 9em ;
+    margin: 3em 5em ;
 
 }
 label{
@@ -18,8 +21,77 @@ label{
     clear: left;
     width: 250px;
     text-align: right;
+    text-align: left;
+    padding-left: 4em;
+    margin-right: -5em;
+    padding-top: 1em ;
+    padding-bottom: 1em;
+    color: #696a6e;
+}
+span{
+    color: red;
+}
+
+input{
+    margin: 1em 0em;
+    margin-right: 0em;
+    padding: 0.5em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    background-color: #f2f5fa;
+}
+select{
+    margin: 1.3em 0em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    padding: 0.4em;
+    background-color: #f2f5fa;
+    color: #696a6e;
+}
+
+#gender{
+    padding-right: 7.9em;
+}
+#email{
+    margin-top: 1em;
+}
+
+#status{
+    margin-top: 1.5em;
+    padding-right: 10.5em;
+}
+
+#photo{
+    margin-top: 1em;
+    width: 15.8em;
+    background-color: #f2f5fa;
+}
+#save{
+    margin-top:1em;
+    margin-left: 10.5em;
+    background-color: rgb(128, 55, 164);
+    border-radius: 20px;
+    padding: 0.5em 2em;
+    color: white;
+}
+.add{
+    
+    padding: 3em 0em;
+    padding-right: 4.5em;
+}
+#contactcode{
+    padding-right: 12em;
+}
+#contactone{
+    padding-right: 4em;
 }
 
 .Form-Container2 p{
     margin: 2em;
+}
+.user h2{
+    font-weight: 400;
+    color: #535357;
 }

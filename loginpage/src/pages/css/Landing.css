@@ -1,5 +1,6 @@
 .Landing{
     display: flex;
+    background-color: #f2f5fa;
     
 
 }
@@ -79,3 +80,34 @@ color: white;
     color: #668fff;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    
+  }
+  th{
+    color: #463bfa;
+    background-color: #e4e4e4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e4e4e4;
+  }
+.taable{
+    padding: 3em;
+    padding-top: 0em;
+}
+#welcome-message{
+    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-weight: 450;
+    color: #535357;
+}
