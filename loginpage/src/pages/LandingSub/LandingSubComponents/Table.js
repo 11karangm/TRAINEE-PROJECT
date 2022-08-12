@@ -1,4 +1,5 @@
 import userdetails from "../../assets/data";
+import {images} from "../../assets/userimages/imagelog"
 
 
 function DarkExample() {
@@ -19,10 +20,13 @@ function DarkExample() {
           <td>{data.work}</td>
           <td>{data.age}</td>
           
+          
+          
+          
         </tr>
 
         ))}
-            
+          
           </tbody>
         </table>
     </div>

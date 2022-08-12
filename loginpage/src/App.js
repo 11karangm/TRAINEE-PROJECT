@@ -8,6 +8,7 @@ import AddNew from './pages/LandingSub/LandingSubComponents/AddNew'
 import Messages from './pages/LandingSub/LandingSubComponents/Messages';
 import Account from './pages/LandingSub/LandingSubComponents/Account';
 import Dashboard from './pages/LandingSub/Dashboard';
+import Big from './big';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/landing/Dashboard" element={<Dashboard />} />
         <Route path="/landing/Messages" element={<Messages />} />
         <Route path="/landing/Account" element={<Account />} />
+        <Route path="/Big" element={<Big />} />
        
         
       </Routes>

@@ -4,7 +4,7 @@ import Obj from './userimages/imagelog'
 
   const userdetails = [
     {
-        name: "ShajiPapan",
+        name: "Josh",
         work: "developer",
         age: "30"
         
@@ -21,12 +21,12 @@ import Obj from './userimages/imagelog'
         age: "27"
     },
     {
-        name: "lalan",
+        name: "louis",
         work: "Drug-Dealer",
         age: "40"
     },
     {
-        name: "Dude",
+        name: "Darma",
         work: "Mafia-Boss",
         age: "35"
     }
