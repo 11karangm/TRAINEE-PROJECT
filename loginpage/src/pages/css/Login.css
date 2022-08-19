@@ -76,6 +76,7 @@ img
 .Form-Container a{
     text-decoration: none;
     color: rgb(177, 99, 205);
+    cursor: pointer;
 }
 
 #forgot{
@@ -99,7 +100,13 @@ img
     font-size: 30px;
     padding: 1em 3em;
     border-radius:50px ;
+    transition-duration: 0.4s;
     
+}
+
+#Logbutton:hover{
+    background-color: #e485f0; /* Green */
+  color: white;
 }
 
 #Lognav

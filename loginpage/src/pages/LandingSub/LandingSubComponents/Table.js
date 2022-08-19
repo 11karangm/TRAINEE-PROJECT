@@ -1,24 +1,47 @@
-import userdetails from "../../assets/data";
-import {images} from "../../assets/userimages/imagelog"
+
+import React from "react";
 
 
-function DarkExample() {
+function DarkExample({users}) {
   return (
     <div>
           <table>
             
           <thead>
-            <th>Name</th>
-            <th>Work</th>
+          <th>Image</th>
+            
+            <th>First Name</th>
+          
+            <th>Maiden Name</th>
             <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>BirthDate</th>
+          
+            
+            
           </thead>
           <tbody>
 
-          {userdetails.map((data,index)=>(
+          {users&&users.map((data,index)=>(
           <tr>
-          <td>{data.name}</td>
-          <td>{data.work}</td>
+            <td><img src={data.image} style={{width:50,height:50}}/></td>
+            
+          <td>{data.firstName}</td>
+          
+          <td>{data.maidenName}</td>
           <td>{data.age}</td>
+          <td>{data.gender}</td>
+          <td id="emaail">{data.email}</td>
+          <td>{data.phone}</td>
+          <td>{data.username}</td>
+          <td>{data.password}</td>
+          <td>{data.birthDate}</td>
+        
+          
           
           
           
