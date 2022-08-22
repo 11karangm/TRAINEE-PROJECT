@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
-const Pagination = ({totalPages,postPerPage,paginate}) => {
+const Pagination = ({paginate}) => {
 
+    const params = useParams();
     const pageNumbers = []
-    for(let i =0;i<Math.ceil(totalPages/postPerPage);i++){
+    for(let i =0;i<Math.ceil(40/5);i++){
         pageNumbers.push(i+1);
     }
   return (
@@ -11,7 +13,8 @@ const Pagination = ({totalPages,postPerPage,paginate}) => {
         <ul  className='pages-list'>
             {pageNumbers.map(number =>(
                 <li key={number} className="page-item">
-                    <a onClick={()=>paginate(number)} href="#/landing/Dashboard" className='page-link' >
+                    
+                    <a onClick={()=>paginate(number)} href={`${number}`} className='page-link' >
                     {number}
                     </a>
                     

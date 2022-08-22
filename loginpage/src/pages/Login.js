@@ -28,7 +28,7 @@ function Login() {
 
     function loginClick () {
         if(message==="admin" && password==="admin"){
-            navigate("/landing/Dashboard");
+            navigate("/landing/Dashboard/1");
         }
     }
     return(

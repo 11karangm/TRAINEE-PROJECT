@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import Menu from "../LandingSubComponents/Menu";
 import "../../css/Landing.css"
 import DarkExample from "../LandingSubComponents/Table";
@@ -13,33 +13,33 @@ import Pagination from "./pagination";
 
 function Dashboard(){
 //Variables for navigating Pagination
-
-    const [currentPage, setCurrentPage] = useState(1);
+    const params = useParams();
+    const [currentPage, setCurrentPage] = useState(0);
     const [postPerPage, setPostPerPage] = useState(5)
 
 //Fetching JSON Data
-    const baseURL = "https://dummyjson.com/users";
+    const baseURL = "https://dummyjson.com/users?limit=5&skip=0";
 
     const [post, setPost] = React.useState();
   
     React.useEffect(() => {
-      axios.get(baseURL).then((response) => {
-        console.log("Data->>>",response)
+      axios.get(`https://dummyjson.com/users?limit=5&skip=${(params.pageNo-1)*5}`).then((response) => {
+        console.log("Data->>>",post)
         setPost(response&&response.data.users&&response.data.users);
       });
-    }, []);
+    }, [currentPage]);
 
 //Get Current Data
 
 const indexOfLastPost = currentPage*postPerPage;
 const indexOfFirstPost = indexOfLastPost-postPerPage;
-const currentPost = post&&post.slice(indexOfFirstPost,indexOfLastPost);
-console.log("data-->",currentPost)
+//const currentPost = post&&post.slice(indexOfFirstPost,indexOfLastPost);
+//console.log("data-->",currentPost)
 
 //Navigating Page
 
 const paginate = pageNumber => {
-    setCurrentPage(pageNumber);
+    setCurrentPage(pageNumber-1);
 }
 
 
@@ -70,8 +70,8 @@ const paginate = pageNumber => {
                 
                 <h2 id="welcome-message">Welcome Back</h2>
                 <div className="taable">
-                <DarkExample users={currentPost}/>
-                <Pagination totalPages={post&&post.length} postPerPage={postPerPage} paginate={paginate}/>
+                <DarkExample users={post}/>
+                <Pagination paginate={paginate}/>
 
                 
                 </div>

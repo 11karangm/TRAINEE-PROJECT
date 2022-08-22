@@ -22,7 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/password-reset" element={<Forgot />} />
         <Route path= "/landing/AddNew" element={<AddNew />} />
-        <Route path="/landing/Dashboard" element={<Dashboard />} />
+        <Route path="/landing/Dashboard/:pageNo" element={<Dashboard />} />
         <Route path="/landing/Messages" element={<Messages />} />
         <Route path="/landing/Account" element={<Account />} />
         

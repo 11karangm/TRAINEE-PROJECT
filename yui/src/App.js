@@ -6,41 +6,55 @@ import React ,{ useState , useEffect } from 'react'
 import axios from 'axios';
 import Post from './Components/Post';
 import Pagination from './Components/Pagination';
+import { Route,Routes } from 'react-router-dom';
+import ProfilePage from './profile';
 
 
 const App = () => {
   const [post, setPost] = useState([]);
   
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
-  const url = "https://dummyjson.com/users"
+  const [currentPage, setCurrentPage] = useState(0);
+  const [postsPerPage, setPostsPerPage] = useState(5);
+  //const url = "https://dummyjson.com/users?limit=5&skip=5";
 
   useEffect (() => {
-    axios.get(url).then((response)=>{
+    axios.get(`https://dummyjson.com/users?limit=5&skip=${currentPage*5}`).then((response)=>{
+      console.log("data=",post);
       setPost(response&&response.data.users&&response.data.users);
 
     });
-  },[]);
+  },[currentPage]);
 
   //Change page
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = pageNumber => {setCurrentPage(pageNumber-1); console.log(currentPage);}
 
   //Get current post
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOFirstPost = indexOfLastPost - postsPerPage;
-  const currentPost = post.slice(indexOFirstPost,indexOfLastPost);
+  //const currentPost = post.slice(indexOFirstPost,indexOfLastPost);
 
-  console.log(post)
-  return (
-    <div className='container mt-5 '>
-      <h1 className='text-primary mb-3 '>Content</h1>
-      <Post posts={currentPost} />
-      <Pagination postsPerPage={postsPerPage}  totalPosts = {post.length} paginate = {paginate} />
+  //console.log(post)
 
-    </div>
-  );
+  //page number declaration
+
+
+
+  
+  
+    return (
+      <Routes>
+        <Route path="users">
+          <Route path=":userId" element={<ProfilePage />} />
+          <Route path="me" element={1+2} />
+        </Route>
+      </Routes>
+    );
+  //<Pagination paginate = {paginate} />
+
 };
+
+
 
 export default App;
